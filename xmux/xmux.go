@@ -20,7 +20,7 @@ func New[K comparable, V any]() *Mux[K, V] {
 	}
 }
 
-// Register 注册
+// Register 注册,推荐在init函数使用
 func (mux *Mux[K, V]) Register(key K, value V) {
 	mux.lock.Lock()
 	defer mux.lock.Unlock()

@@ -1,3 +1,3 @@
-module github.com/boyapple/xmux
+module github.com/boyapple/common/xmux
 
 go 1.22
